@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data Analyzer</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="FunctionTab">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>0</y>
+      <width>660</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>600</y>
+        <width>531</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>600</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Control</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>560</y>
+        <width>531</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>560</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Toogle</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>191</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>560</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>585</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Execute</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>181</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>10</y>
+       <width>161</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>File Explorer</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>15</y>
+      <width>181</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Parameters</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>380</y>
+      <width>181</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Log</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionOpen_Folder"/>
+    <addaction name="actionImport_Project"/>
+    <addaction name="actionExport"/>
+    <addaction name="actionImport"/>
+    <addaction name="actionExport_2"/>
+    <addaction name="actionClose_File"/>
+    <addaction name="actionClose_Folder"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRdedo"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionFind"/>
+    <addaction name="actionReplace"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionPreference"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionTutorial"/>
+    <addaction name="actionKeyboard_Shortcut_Reference"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionReport_Issue"/>
+    <addaction name="actionCheck_for_Update"/>
+    <addaction name="actionAbout_2"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionTutorial">
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>View License</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New Porject</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionOpen_Folder">
+   <property name="text">
+    <string>Open Folder...</string>
+   </property>
+  </action>
+  <action name="actionImport_Project">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Save As...</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionExport_2">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+  <action name="actionClose_File">
+   <property name="text">
+    <string>Close File</string>
+   </property>
+  </action>
+  <action name="actionClose_Folder">
+   <property name="text">
+    <string>Close Folder</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRdedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </action>
+  <action name="actionReplace">
+   <property name="text">
+    <string>Replace</string>
+   </property>
+  </action>
+  <action name="actionKeyboard_Shortcut_Reference">
+   <property name="text">
+    <string>Keyboard Shortcut Reference</string>
+   </property>
+  </action>
+  <action name="actionReport_Issue">
+   <property name="text">
+    <string>Report Issue</string>
+   </property>
+  </action>
+  <action name="actionCheck_for_Update">
+   <property name="text">
+    <string>Check for Update</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionPreference">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
